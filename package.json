@@ -1,7 +1,7 @@
 {
   "name": "relsa",
-  "version": "0.9.1",
-  "description": "Horizontal bar with switchable steps",
+  "version": "0.9.3",
+  "description": "Horizontal progress bar with switchable steps",
   "main": "./module/index.js",
   "browserslist": "> 0.25%, not dead",
   "scripts": {
@@ -21,6 +21,9 @@
     "horizontal",
     "line",
     "carousel",
+    "progress",
+    "bar",
+    "steps",
     "timeline"
   ],
   "files": [
