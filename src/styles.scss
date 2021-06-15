@@ -1,0 +1,94 @@
+$color_default: #a5ddff;
+$color_active: #00a0e0;
+$color_text: #333;
+
+
+.relsa-carousel {
+    background-color: #fff;
+    width: 100%;
+    max-width: 900px;
+    margin: 50px auto 25px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+    &.responsive {
+
+        @media screen and (max-width: 426px) {
+            justify-content: flex-end;
+
+            .relsa-item {
+                flex-basis: 0 !important;
+
+                &:nth-child(2) {
+                    flex-basis: 50% !important;
+                }
+
+                span {
+                    visibility: hidden;
+                    opacity: 0;
+                    transition: opacity .2s ease;
+                }
+
+                &.active {
+                    flex-basis: 50% !important;
+
+                    span {
+                        visibility: visible;
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+
+    .relsa-item {
+        position: relative;
+        background: $color_default;
+        width: 100%;
+        height: 5px;
+        transition: flex-basis .2s ease;
+
+        &:first-of-type,
+        &:last-of-type {
+            background: none;
+        }
+
+        span {
+            &:before {
+                content: "";
+                width: 10px;
+                height: 10px;
+                display: block;
+                border-radius: 100%;
+                position: absolute;
+                top: -21px;
+                left: -4px;
+                z-index: 2;
+                background: $color_default;
+                border: 3px solid $color_default;
+                transition: background .2s ease,
+                    border-color .2s ease;
+            }
+
+            position: absolute;
+            font-family: sans-serif;
+            top: 15px;
+            left: -4px;
+            color: $color_text;
+            // min-width: 16px;
+            width: 0px;
+            text-align: center;
+        }
+
+        &.active {
+            span {
+                &:before {
+                    background: $color_active;
+                    border: 3px solid $color_active;
+                }
+            }
+
+        }
+    }
+}

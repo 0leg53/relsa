@@ -1,0 +1,37 @@
+{
+  "name": "relsa",
+  "version": "0.9.0",
+  "description": "Horizontal bar with switchable steps",
+  "main": "./module/index.js",
+  "browserslist": "> 0.25%, not dead",
+  "scripts": {
+    "build": "rollup --config rollup.config.js"
+  },
+  "author": "Oleg Sergeev",
+  "license": "MIT",
+  "keywords": [
+    "relsa",
+    "horizontal",
+    "line",
+    "carousel",
+    "timeline"
+  ],
+  "files": [
+    "module/",
+    "README.md",
+    "LICENSE"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/core": "^7.14.5",
+    "@babel/plugin-proposal-class-properties": "^7.14.5",
+    "@babel/preset-env": "^7.14.5",
+    "@rollup/plugin-babel": "^5.3.0",
+    "autoprefixer": "^10.2.6",
+    "babel-preset-minify": "^0.5.1",
+    "cssnano": "^5.0.6",
+    "node-sass": "^6.0.0",
+    "postcss": "^8.3.4",
+    "rollup-plugin-scss": "^2.6.1"
+  }
+}
