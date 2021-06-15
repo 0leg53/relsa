@@ -62,6 +62,7 @@ $color_text: #333;
                 display: block;
                 border-radius: 100%;
                 position: absolute;
+                box-sizing: content-box;
                 top: -21px;
                 left: -4px;
                 z-index: 2;
