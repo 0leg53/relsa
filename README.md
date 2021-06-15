@@ -8,7 +8,7 @@
 
 > Relsa is javascript-made horizontal bar with switchable steps. No dependencies. My first project btw :)
 
-<img alt="Demo GIF" src="https://github.com/0leg53/relsa-preview/blob/main/demo/demo.gif" />
+<img alt="Demo GIF" src="https://github.com/0leg53/relsa/blob/main/demo/demo.gif" />
 
 ### 🏠 [Homepage](https://github.com/0leg53/relsa)
 
