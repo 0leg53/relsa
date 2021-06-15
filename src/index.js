@@ -12,7 +12,6 @@ function Relsa(options) {
     customDotClassName: '',
     isResponsive: true,
   };
-
   options.render && (options.render = Math.floor(options.render));
   options.startIndex && (options.startIndex = Math.floor(options.startIndex));
 
@@ -65,15 +64,18 @@ function Relsa(options) {
   };
 
   this.state = {
-    currentActiveItem: this.options.startIndex,
-    node: document.querySelector(options.container),
+    currentActiveItem: _this.options.startIndex,
+    node: document.querySelector(_this.options.container),
     proportions: this.generateProportions(),
   };
   this.render = function () {
     const renderNode = _this.state.node;
-
-    if (_this.options.container.length < 1 || renderNode.length < 1) {
-      console.log('No container found in', options.container);
+    if (
+      !renderNode ||
+      _this.options.container.length < 1 ||
+      renderNode.length < 1
+    ) {
+      console.log('No container found in', _this.options.container);
       return false;
     }
 
@@ -91,7 +93,7 @@ function Relsa(options) {
       (options.customDotClassName ? ' ' + options.customDotClassName : '');
     renderNode.appendChild(relsaItem);
 
-    for (let index = 1; index < options.render + 1; index++) {
+    for (let index = 1; index < _this.options.render + 1; index++) {
       let newRelsaItem = relsaItem.cloneNode();
       newRelsaItem.innerHTML = '<span>' + index + '</span>';
       newRelsaItem.style.flexBasis =
