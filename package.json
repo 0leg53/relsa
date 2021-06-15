@@ -9,6 +9,13 @@
   },
   "author": "Oleg Sergeev",
   "license": "MIT",
+  "repository": {
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/0leg53/relsa.git"
+    }
+  },
+  "homepage": "https://github.com/0leg53/relsa#readme",
   "keywords": [
     "relsa",
     "horizontal",
