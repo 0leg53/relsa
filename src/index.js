@@ -138,6 +138,7 @@ function Relsa(options) {
 
     return _this.state;
   };
+  return _this.render()
 }
 
 export default Relsa;

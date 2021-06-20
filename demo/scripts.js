@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
     render: 5,
     startIndex: 3,
     isResponsive: true,
-  }).render();
+  })
   console.log(relsa);
 
   document.querySelector(".button.prev").onclick = relsa.setPrev;

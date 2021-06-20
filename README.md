@@ -1,6 +1,6 @@
 <h1> Relsa 🚂</h1>
 <p>
-  <img alt="Version" src="https://img.shields.io/badge/version-0.9.3-blue.svg?cacheSeconds=2592000" />
+  <img alt="Version" src="https://img.shields.io/badge/version-0.9.4-blue.svg?cacheSeconds=2592000" />
   <a href="#" target="_blank">
     <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg" />
   </a>
@@ -42,12 +42,12 @@ import '~/node_modules/relsa/module/relsa.css';
 </body>
 ```
 
-3. Call the Relsa's instance and `render()` method with 'container' property:
+3. Call the Relsa's instance with 'container' property:
 
 ```js
 var relsa = new Relsa({
   container: '.relsa',
-}).render();
+});
 ```
 
 # Options and methods:
