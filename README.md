@@ -1,9 +1,11 @@
 <h1> Relsa 🚂</h1>
 <p>
-  <img alt="Version" src="https://img.shields.io/badge/version-0.9.4-blue.svg?cacheSeconds=2592000" />
+  <img alt="Tests coverage" src="https://github.com/0leg53/relsa/blob/main/coverage/badge.svg" />
+  <a href="https://www.npmjs.com/package/relsa"><img src="https://badge.fury.io/js/relsa.svg" alt="npm version"></a>
   <a href="#" target="_blank">
     <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg" />
   </a>
+  
 </p>
 
 > Relsa is javascript-made horizontal progress bar with switchable steps. No dependencies. My first project btw :)

@@ -15,17 +15,21 @@ function Relsa(options) {
   options.render && (options.render = Math.floor(options.render));
   options.startIndex && (options.startIndex = Math.floor(options.startIndex));
 
-  if (options.render < 1) {
-    options.render = 1;
-  }
-
-  if (options.startIndex > options.render || options.startIndex < 1) {
-    options.startIndex = 1;
-  }
 
   options instanceof Object
     ? (this.options = extend(defaultOptions, options))
     : (this.options = defaultOptions);
+
+  if (this.options.render < 1) {
+    this.options.render = 1;
+  }
+
+  if (
+    this.options.startIndex > this.options.render ||
+    this.options.startIndex < 1
+  ) {
+    this.options.startIndex = 1;
+  }
 
   this.generateProportions = function () {
     let proportions = [];
@@ -90,7 +94,7 @@ function Relsa(options) {
       _this.state.proportions[initialRelsaItem][0] + '%';
     relsaItem.className =
       'relsa-item' +
-      (options.customDotClassName ? ' ' + options.customDotClassName : '');
+      (options.customDotClassName && ' ' + options.customDotClassName);
     renderNode.appendChild(relsaItem);
 
     for (let index = 1; index < _this.options.render + 1; index++) {
