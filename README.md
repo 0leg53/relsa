@@ -68,7 +68,6 @@ var relsa = new Relsa({
 
 ### Methods:
 
-- `render()` — renders Relsa instance
 - `setNext()` — sets next active dot
 - `setPrev()` — sets previous active dot
 - `setActiveItem(index)` — sets active dot by index

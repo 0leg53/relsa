@@ -1,6 +1,6 @@
 {
   "name": "relsa",
-  "version": "0.9.5",
+  "version": "0.9.6",
   "description": "Horizontal progress bar with switchable steps",
   "main": "./module/index.js",
   "browserslist": "> 0.25%, not dead",
