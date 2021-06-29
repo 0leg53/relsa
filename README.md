@@ -3,7 +3,7 @@
   <img alt="Tests coverage" src="https://github.com/0leg53/relsa/blob/main/coverage/badge.svg" />
   <a href="https://www.npmjs.com/package/relsa"><img src="https://badge.fury.io/js/relsa.svg" alt="npm version"></a>
   <a href="#" target="_blank">
-    <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg" />
+    <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-limone.svg" />
   </a>
   
 </p>

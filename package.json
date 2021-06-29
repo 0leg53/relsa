@@ -1,12 +1,14 @@
 {
   "name": "relsa",
-  "version": "0.9.6",
+  "version": "0.9.7",
   "description": "Horizontal progress bar with switchable steps",
   "main": "./module/index.js",
   "browserslist": "> 0.25%, not dead",
   "scripts": {
     "build": "rollup --config rollup.config.js",
-    "test": "jest && make-coverage-badge"
+    "test": "jest && make-coverage-badge",
+    "prettier": "prettier --check \"./src/**/*.js\"",
+    "prepublish": "yarn run prettier && yarn run test"
   },
   "author": "Oleg Sergeev",
   "license": "MIT",
@@ -46,6 +48,7 @@
     "make-coverage-badge": "^1.2.0",
     "node-sass": "^6.0.0",
     "postcss": "^8.3.4",
+    "prettier": "^2.3.2",
     "rollup-plugin-scss": "^2.6.1"
   }
 }

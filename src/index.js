@@ -15,7 +15,6 @@ function Relsa(options) {
   options.render && (options.render = Math.floor(options.render));
   options.startIndex && (options.startIndex = Math.floor(options.startIndex));
 
-
   options instanceof Object
     ? (this.options = extend(defaultOptions, options))
     : (this.options = defaultOptions);
@@ -94,7 +93,7 @@ function Relsa(options) {
       _this.state.proportions[initialRelsaItem][0] + '%';
     relsaItem.className =
       'relsa-item' +
-      (options.customDotClassName && ' ' + options.customDotClassName);
+      (options.customDotClassName ? ' ' + options.customDotClassName : '');
     renderNode.appendChild(relsaItem);
 
     for (let index = 1; index < _this.options.render + 1; index++) {
@@ -142,7 +141,7 @@ function Relsa(options) {
 
     return _this.state;
   };
-  return _this.render()
+  return _this.render();
 }
 
 export default Relsa;

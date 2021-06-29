@@ -73,3 +73,17 @@ test('set custom classes for relsa-items', () => {
     expect(item.classList.contains(options.customDotClassName)).toBeTruthy();
   });
 });
+
+test('unset custom classes for relsa-items', () => {
+  document.body.innerHTML = '<div class="relsa"></div>';
+  const invalidRelsa = new Relsa({
+    ...options,
+    customDotClassName: null,
+  });
+  const renderedItems = document.querySelectorAll('.relsa-item');
+  renderedItems.forEach((item, i) => {
+    expect(item.classList.length).toBe(
+      item.classList.contains('active') ? 2 : 1
+    );
+  });
+});
